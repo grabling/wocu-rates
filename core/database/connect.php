@@ -4,9 +4,9 @@ if(!defined('INCLUDE_CHECK')) die('You are not allowed to execute this file dire
 
 /* Database config */
 
-$hostname = '127.0.0.1';
+$hostname = 'localhost';
 $username='root';
-$password='root';
+$password='password';
 $dbname='wocu';
 
 /* End config */
