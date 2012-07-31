@@ -50,9 +50,19 @@
 
 	graph.render();
 
+	// var hoverDetail = new Rickshaw.Graph.HoverDetail( {
+	// 	graph: graph
+	// } );
+
 	var hoverDetail = new Rickshaw.Graph.HoverDetail( {
-		graph: graph
+		graph: graph,
+		formatter: function(series, x, y) {
+			var swatch = '<span class="detail_swatch" style="background-color: ' + series.color + '"></span>';
+			var content = swatch + series.name + ": " + y;
+			return content;
+		}
 	} );
+
 
 	var legend = new Rickshaw.Graph.Legend( {
 		graph: graph,
