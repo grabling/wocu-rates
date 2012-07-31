@@ -1,4 +1,7 @@
-<?php require 'inc/header.php'; ?> 
-
+<?php 
+  include 'core/init.php';
+  include 'inc/header.php'; 
+?> 
+<h1>Home</h1>
       
-<?php require 'inc/footer.php'; ?>
+<?php include 'inc/footer.php'; ?>
