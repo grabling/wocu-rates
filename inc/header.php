@@ -27,11 +27,11 @@
 
 
   <script src="js/bootstrap.js"></script>
-  <script src="vendor/js/d3.min.js"></script>
+  <script src="vendor/js/d3.v2.min.js"></script>
   <script src="vendor/js/d3.layout.min.js"></script>
   <script src="vendor/js/Rickshaw.js"></script>
   <script src="vendor/js/extensions.js"></script>
-  
+
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>

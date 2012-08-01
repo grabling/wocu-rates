@@ -4,8 +4,8 @@ if(!defined('INCLUDE_CHECK')) die('You are not allowed to execute this file dire
 
 /* Config */
 
-$site_name		= '';
-$company_name	= '';	
+$site_name		= 'WOCU';
+$company_name	= 'WOCU';	
 
 /* End config */
 
