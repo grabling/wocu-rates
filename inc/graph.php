@@ -14,7 +14,7 @@
 	var data1 = 
 	<?php
 	    // Call for data
-	    echo format_timeline_data(get_timeline_data($currency_1_id, $start_date, $graph_type)); 
+	    echo format_timeline_data(get_timeline_data($currency_1_id, $start_date)); 
 	?>
 	;
 
@@ -22,7 +22,7 @@
 	var data2 = 
 	<?php
 	    // Call for data
-	    echo format_timeline_data(get_timeline_data($currency_2_id, $start_date, $graph_type));
+	    echo format_timeline_data(get_timeline_data($currency_2_id, $start_date));
 	?>
 	;
 
