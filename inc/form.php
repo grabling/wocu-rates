@@ -51,6 +51,15 @@
                 </div>
                 <div class="span2">
                     <label>
+                        <h6>Type</h6>
+                    </label>
+                    <select name="type" id="type" class="span8">
+                        <option value="fxrates" <?php if ($graph_type == 'fxrates') { echo 'selected="selected"'; } ?>>FX Rates</option>
+                        <option value="calculation" <?php if ($graph_type == 'calculation') { echo 'selected="selected"'; } ?>>Calculation</option>
+                    </select>
+                </div>
+                <div class="span2">
+                    <label>
                         <h6>View data</h6>
                     </label>
                     <button type="submit" class="btn">Submit</button>

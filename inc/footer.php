@@ -1,5 +1,3 @@
-        <hr>
-        
         </div> <!-- /container -->
 
         <!-- Le javascript

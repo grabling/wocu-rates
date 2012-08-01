@@ -9,8 +9,14 @@ function get_currency_name($currency_id) {
 	return mysql_result(mysql_query("SELECT `name` FROM `currency` WHERE `id` = $currency_id"), 0, 'name');
 }
 
-function get_timeline_data($currency_id, $start_date) {
-	return mysql_query("SELECT r.`date`, r.`rate` FROM `fxrates` r WHERE r.`currency_id` = $currency_id AND r.date > '$start_date'");
+function get_timeline_data($currency_id, $start_date, $graph_type) {
+
+	if ($graph_type == 'fxrates') {
+		return mysql_query("SELECT r.`date`, r.`rate` FROM `fxrates` r WHERE r.`currency_id` = $currency_id AND r.date > '$start_date'");
+	}
+	else {
+		return;
+	}
 }
 
 function format_timeline_data($data) {
