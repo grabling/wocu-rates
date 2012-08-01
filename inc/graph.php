@@ -31,6 +31,7 @@
 	    element: document.getElementById("chart"),
 	    width: 1130,
 	    height: 300,
+	    min: 'auto',
 	    renderer: 'line',
 	    stroke: true,
 	    series: [ 
@@ -51,15 +52,6 @@
 
 	graph.render();
 
-	// var hoverDetail = new Rickshaw.Graph.HoverDetail( {
-	// 	graph: graph,
-	// 	formatter: function(series, x, y) {
-	// 		var swatch = '<span class="detail_swatch" style="background-color: ' + series.color + '"></span>';
-	// 		var content = swatch + series.name + ": " + y;
-	// 		return content;
-	// 	}
-	// } );
-
 	var ticksTreatment = 'glow';
 
 	var xAxis = new Rickshaw.Graph.Axis.Time( {
@@ -76,13 +68,6 @@
 	} );
 
 	yAxis.render();
-
-
-	// var legend = new Rickshaw.Graph.Legend( {
-	// 	graph: graph,
-	// 	element: document.getElementById('legend')
-
-	// } );
 
 	var legend = document.querySelector('#legend');
 
