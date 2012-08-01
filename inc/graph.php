@@ -29,9 +29,10 @@
 	
 	var graph = new Rickshaw.Graph( {
 	    element: document.getElementById("chart"),
-	    width: 1130,
+	    //width: 1130,
 	    height: 300,
 	    min: 'auto',
+	    padding: { top: 0.2, bottom: 0.2 },
 	    renderer: 'line',
 	    stroke: true,
 	    series: [ 
@@ -50,24 +51,20 @@
 	        ]
 	} );
 
-	graph.render();
-
-	var ticksTreatment = 'glow';
+	var time = new Rickshaw.Fixtures.Time();
+	var year = time.unit('year');
 
 	var xAxis = new Rickshaw.Graph.Axis.Time( {
 		graph: graph,
-		ticksTreatment: ticksTreatment
+		timeUnit: year
 	} );
-
-	xAxis.render();
 
 	var yAxis = new Rickshaw.Graph.Axis.Y( {
 		graph: graph,
-		tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
-		ticksTreatment: ticksTreatment
+		tickFormat: Rickshaw.Fixtures.Number.formatKMBT
 	} );
 
-	yAxis.render();
+	graph.render();
 
 	var legend = document.querySelector('#legend');
 

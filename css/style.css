@@ -15,6 +15,7 @@ html, body {
 
 #chart {
 	position: relative;
+	width: 100%;
 }
 
 #y_axis {
