@@ -1,8 +1,12 @@
-<div id="chart_container">
-	<div id="graph"></div>
-	<div id="legend_container">
-	<div id="smoother" title="Smoothing"></div>
-	<div id="legend"></div>
+<div class="well">
+	<div class="row-fluid">
+		<div id="chart_container">
+			<div id="graph"></div>
+			<div id="legend_container">
+			<div id="smoother" title="Smoothing"></div>
+			<div id="legend"></div>
+			</div>
+		</div>
 	</div>
 </div>
 <script>
@@ -28,7 +32,7 @@
 	
 	var graph = new Rickshaw.Graph( {
 	    element: document.getElementById("graph"),
-	    width: 1170,
+	    width: 1130,
 	    height: 300,
 	    renderer: 'line',
 	    stroke: true,
