@@ -4,7 +4,7 @@
 ?>
 <div class="well">
     <div class="row-fluid">
-        <form action="index.php?t=graph" method="POST">
+        <form action="index.php" method="GET">
             <div class="span12">
                 <div class="span2">
                     <label>
