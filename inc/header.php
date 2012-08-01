@@ -22,6 +22,7 @@
   <link type="text/css" rel="stylesheet" href="vendor/css/graph.css">
   <link type="text/css" rel="stylesheet" href="vendor/css/detail.css">
   <link type="text/css" rel="stylesheet" href="vendor/css/lines.css">
+  <link type="text/css" rel="stylesheet" href="vendor/css/legend.css">
   <link type="text/css" rel="stylesheet" href="vendor/css/extensions.css">
 
 
@@ -35,11 +36,21 @@
   <script src="vendor/js/Rickshaw.Graph.Renderer.js"></script>
   <script src="vendor/js/Rickshaw.Graph.Renderer.Area.js"></script>
   <script src="vendor/js/Rickshaw.Graph.Renderer.Line.js"></script>
+  <script src="vendor/js/Rickshaw.Graph.Renderer.Bar.js"></script>
+  <script src="vendor/js/Rickshaw.Graph.Renderer.ScatterPlot.js"></script>
+  <script src="vendor/js/Rickshaw.Graph.RangeSlider.js"></script>
   <script src="vendor/js/Rickshaw.Graph.HoverDetail.js"></script>
+  <script src="vendor/js/Rickshaw.Graph.Annotate.js"></script>
+  <script src="vendor/js/Rickshaw.Graph.Legend.js"></script>
   <script src="vendor/js/Rickshaw.Graph.Axis.Time.js"></script>
+  <script src="vendor/js/Rickshaw.Graph.Behavior.Series.Toggle.js"></script>
+  <script src="vendor/js/Rickshaw.Graph.Behavior.Series.Order.js"></script>
+  <script src="vendor/js/Rickshaw.Graph.Behavior.Series.Highlight.js"></script>
+  <script src="vendor/js/Rickshaw.Graph.Smoother.js"></script>
   <script src="vendor/js/Rickshaw.Graph.Unstacker.js"></script>
   <script src="vendor/js/Rickshaw.Fixtures.Time.js"></script>
   <script src="vendor/js/Rickshaw.Fixtures.Number.js"></script>
+  <script src="vendor/js/Rickshaw.Fixtures.RandomData.js"></script>
   <script src="vendor/js/Rickshaw.Fixtures.Color.js"></script>
   <script src="vendor/js/Rickshaw.Color.Palette.js"></script>
   <script src="vendor/js/Rickshaw.Graph.Axis.Y.js"></script>

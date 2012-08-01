@@ -11,7 +11,7 @@ Rickshaw.Graph.HoverDetail = Rickshaw.Class.create({
 		};
 
 		this.yFormatter = args.yFormatter || function(y) {
-			return y.toFixed(0);
+			return y.toFixed(2);
 		}; 
 		
 		var element = this.element = document.createElement('div');

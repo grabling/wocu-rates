@@ -15,7 +15,8 @@ function get_timeline_data($currency_id, $start_date) {
 
 function format_timeline_data($data) {
 	$i = 0;
-	while($row = mysql_fetch_array($data)){
+	
+	while($row = mysql_fetch_array($data)) {
 		
 		$shortDate = $row['date'];
 		$timestamp = strtotime($shortDate);
