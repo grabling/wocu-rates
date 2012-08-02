@@ -36,4 +36,63 @@ function format_timeline_data($data) {
 	return $output;
 }
 
+
+function calculation($currency_id_1, $currency_id_2, $start_date) {
+	
+	$c1 = get_timeline_data($currency_id_1, $start_date);
+	$c2 = get_timeline_data($currency_id_2, $start_date);
+
+	$count = mysql_num_rows($c1);
+
+	$i = 0;
+
+	while ($row = mysql_fetch_array($c1)) {
+		$results[$i]['date'] = $row['date'];
+		$results[$i]['c1'] = $row['rate'];
+		$i++;
+	}
+
+	$i = 0;
+
+	while ($row = mysql_fetch_array($c2)) {
+		$results[$i]['c2'] = $row['rate'];
+		$i++;
+	}
+
+
+	for ($i=0; $i < $count; $i++) { 
+		$results[$i]['A'] = $results[$i]['c1'] / $results[$i]['c2'];
+	}
+
+	for ($i=0; $i < $count; $i++) { 
+		$results[$i]['B'] = $results[$i]['A'] / $results[0]['A'];
+	}
+
+	return $results;
+}
+
+
+function format_calc_data($data) {
+	$count = count($data);
+	
+	for ($i=0; $i < $count; $i++) { 
+		
+		$shortDate = $data[$i]['date'];
+		$timestamp = strtotime($shortDate);
+		
+		$value = $data[$i]['B'];
+
+		$results_array[$i]['x'] = $timestamp;
+		$results_array[$i]['y'] = $value;
+
+    }
+
+    $output = json_encode($results_array);
+	$output = (string)$output;
+	$output = str_replace('"', '', $output);
+	//$output = preg_replace('\$\d+:\$', '', $output);
+
+	return $output;
+}
+
 ?>

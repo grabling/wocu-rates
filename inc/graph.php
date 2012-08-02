@@ -6,12 +6,24 @@
 		
 	</div>
 </div>
+
+<?php
+
+
+
+?>
+
 <script>
 	// Get currency 1 data
 	var data1 = 
 	<?php
 	    // Call for data
-	    echo format_timeline_data(get_timeline_data($currency_1_id, $start_date)); 
+		if ($graph_type == 'calculation' ) {
+	    	echo format_calc_data(calculation($currency_1_id, $currency_2_id, $start_date)); 
+	    }
+	    else {
+	    	echo format_timeline_data(get_timeline_data($currency_1_id, $start_date));
+	    }
 	?>
 	;
 
@@ -19,7 +31,12 @@
 	var data2 = 
 	<?php
 	    // Call for data
-	    echo format_timeline_data(get_timeline_data($currency_2_id, $start_date));
+	    if ($graph_type == 'calculation' ) {
+	    	echo format_calc_data(calculation(35, $currency_2_id, $start_date)); 
+	    }
+	    else {
+	    	echo format_timeline_data(get_timeline_data($currency_2_id, $start_date));
+	    }
 	?>
 	;
 
@@ -40,13 +57,13 @@
 	                color: palette.color(),
 	                stroke: 'rgba(0,0,0,0.15)',
 	                data: data1,
-	                name: <?php echo '"'. get_currency_name($currency_1_id) .'"'; ?>
+	                name: <?php if ($graph_type == 'calculation' ) { echo '"'. get_currency_name($currency_1_id) .' / '. get_currency_name($currency_2_id) .'"'; } else { echo '"'. get_currency_name($currency_1_id) .'"'; } ?>
 	        },
 	        {
 	                color: palette.color(),
 	                stroke: 'rgba(0,0,0,0.15)',
 	                data: data2,
-	                name: <?php echo '"'. get_currency_name($currency_2_id) .'"'; ?>
+	                name: <?php if ($graph_type == 'calculation' ) { echo '"'. get_currency_name($currency_2_id) .' / '. get_currency_name(35) .'"'; } else { echo '"'. get_currency_name($currency_2_id) .'"'; } ?>
 	        }
 	        ]
 	} );
