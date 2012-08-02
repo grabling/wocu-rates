@@ -63,7 +63,7 @@
 	                color: palette.color(),
 	                stroke: 'rgba(0,0,0,0.15)',
 	                data: data2,
-	                name: <?php if ($graph_type == 'calculation' ) { echo '"'. get_currency_name($currency_2_id) .' / '. get_currency_name(35) .'"'; } else { echo '"'. get_currency_name($currency_2_id) .'"'; } ?>
+	                name: <?php if ($graph_type == 'calculation' ) { echo '"'. get_currency_name(35) .' / '. get_currency_name($currency_2_id) .'"'; } else { echo '"'. get_currency_name($currency_2_id) .'"'; } ?>
 	        }
 	        ]
 	} );
