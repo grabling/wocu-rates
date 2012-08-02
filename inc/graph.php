@@ -62,12 +62,11 @@
 	        ]
 	} );
 
-	var time = new Rickshaw.Fixtures.Time();
-	var year = time.unit('year');
+	// var time = new Rickshaw.Fixtures.Time();
+	// var year = time.unit('year');
 
 	var xAxis = new Rickshaw.Graph.Axis.Time( {
 		graph: graph,
-		timeUnit: year
 	} );
 
 	var yAxis = new Rickshaw.Graph.Axis.Y( {
