@@ -9,8 +9,8 @@ function get_currency_name($currency_id) {
 	return mysql_result(mysql_query("SELECT `name` FROM `currency` WHERE `id` = $currency_id"), 0, 'name');
 }
 
-function get_timeline_data($currency_id, $start_date) {
-	return mysql_query("SELECT r.`date`, r.`rate` FROM `fxrates` r WHERE r.`currency_id` = $currency_id AND r.date > '$start_date'");
+function get_timeline_data($currency_id, $start_date, $end_date) {
+	return mysql_query("SELECT r.`date`, r.`rate` FROM `fxrates` r WHERE r.`currency_id` = $currency_id AND (r.date >= '$start_date' AND r.date <= '$end_date')");
 }
 
 function format_timeline_data($data) {
@@ -37,10 +37,10 @@ function format_timeline_data($data) {
 }
 
 
-function calculation($currency_id_1, $currency_id_2, $start_date) {
+function calculation($currency_id_1, $currency_id_2, $start_date, $end_date) {
 	
-	$c1 = get_timeline_data($currency_id_1, $start_date);
-	$c2 = get_timeline_data($currency_id_2, $start_date);
+	$c1 = get_timeline_data($currency_id_1, $start_date, $end_date);
+	$c2 = get_timeline_data($currency_id_2, $start_date, $end_date);
 
 	$count = mysql_num_rows($c1);
 

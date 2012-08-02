@@ -17,6 +17,7 @@
     }
   </style>
   <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="css/datepicker.css" rel="stylesheet">
 
   <link type="text/css" rel="stylesheet" href="vendor/css/rickshaw.min.css">
   <link type="text/css" rel="stylesheet" href="vendor/css/graph.css">
@@ -25,8 +26,9 @@
   <link type="text/css" rel="stylesheet" href="vendor/css/legend.css">
   <link type="text/css" rel="stylesheet" href="vendor/css/extensions.css">
 
-
+  <script src="js/jquery-1.7.2.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
   <script src="vendor/js/d3.v2.min.js"></script>
   <script src="vendor/js/d3.layout.min.js"></script>
   <script src="vendor/js/Rickshaw.js"></script>

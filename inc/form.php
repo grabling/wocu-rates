@@ -44,10 +44,13 @@
                     <label>
                         <h6>Start Date</h6>
                     </label>
-                    <select name="period" id="period" class="span8">
-                        <option value="2000-01-01" <?php if ($start_date == '2000-01-01') { echo 'selected="selected"'; } ?>>2000-01-01</option>
-                        <option value="2010-07-01" <?php if ($start_date == '2010-07-01') { echo 'selected="selected"'; } ?>>2010-07-01</option>
-                    </select>
+                    <input type="text" class="span8" value="<?php if (isset($start_date)) { echo $start_date; } else { echo '2000-01-01'; } ?>" id="startdate" name="startdate">
+                </div>
+                <div class="span2">
+                    <label>
+                        <h6>End Date</h6>
+                    </label>
+                    <input type="text" class="span8" value="<?php if (isset($end_date)) { echo $end_date; } else { echo '2012-07-030'; } ?>"  id="enddate" name="enddate">
                 </div>
                 <div class="span2">
                     <label>
@@ -68,3 +71,14 @@
         </form>
     </div>
 </div>
+
+<script>
+    $(function(){
+        $('#startdate').datepicker({
+            format: 'yyyy-mm-dd'
+        });
+        $('#enddate').datepicker({
+            format: 'yyyy-mm-dd'
+        });
+    });
+</script>
