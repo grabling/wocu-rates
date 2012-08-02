@@ -90,7 +90,6 @@ function format_calc_data($data) {
     $output = json_encode($results_array);
 	$output = (string)$output;
 	$output = str_replace('"', '', $output);
-	//$output = preg_replace('\$\d+:\$', '', $output);
 
 	return $output;
 }

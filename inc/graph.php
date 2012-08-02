@@ -7,12 +7,6 @@
 	</div>
 </div>
 
-<?php
-
-
-
-?>
-
 <script>
 	// Get currency 1 data
 	var data1 = 
