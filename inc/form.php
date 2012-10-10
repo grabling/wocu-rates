@@ -50,7 +50,7 @@
                     <label>
                         <h6>End Date</h6>
                     </label>
-                    <input type="text" class="span8" value="<?php if (isset($end_date)) { echo $end_date; } else { echo '2012-07-030'; } ?>"  id="enddate" name="enddate">
+                    <input type="text" class="span8" value="<?php if (isset($end_date)) { echo $end_date; } else { echo '2012-07-03'; } ?>"  id="enddate" name="enddate">
                 </div>
                 <div class="span2">
                     <label>
