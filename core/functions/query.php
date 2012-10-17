@@ -13,7 +13,7 @@ function get_max_date() {
 	return mysql_query("SELECT MAX(`date`) FROM `fxrates` WHERE `currency_id` = 1");
 }
 
-function_get_wocu_id() {
+function get_wocu_id() {
 	return mysql_query("SELECT `id` FROM `currency` WHERE `name` = "XCU"");
 }
 
