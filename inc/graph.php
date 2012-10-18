@@ -13,7 +13,7 @@
 	<?php
 	    // Call for data
 		if ($graph_type == 'calculation' ) {
-	    	echo format_calc_data(calculation($currency_1_id, $currency_2_id, $start_date, $end_date)); 
+	    	echo format_calc_data(calculation($currency_1_id, $currency_2_id, $start_date, $end_date));  
 	    }
 	    else {
 	    	echo format_timeline_data(get_timeline_data($currency_1_id, $start_date, $end_date));
