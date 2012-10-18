@@ -14,7 +14,7 @@ function get_max_date() {
 }
 
 function get_wocu_id() {
-	return mysql_result(mysql_query("SELECT `id` FROM `currency` WHERE `name` = 'XCU'"), 0, 'currency_id');
+	return mysql_result(mysql_query("SELECT `id` FROM `currency` WHERE `name` = 'XCU'"), 0, 'id');
 }
 
 function get_currency_name($currency_id) {
