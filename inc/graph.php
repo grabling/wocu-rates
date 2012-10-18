@@ -26,7 +26,7 @@
 	<?php
 	    // Call for data
 	    if ($graph_type == 'calculation' ) {
-	    	echo format_calc_data(calculation(get_wocu_id(), $currency_2_id, $start_date, $end_date)); 
+	    	echo format_calc_data(calculation(1, $currency_2_id, $start_date, $end_date)); 
 	    }
 	    else {
 	    	echo format_timeline_data(get_timeline_data($currency_2_id, $start_date, $end_date));
@@ -57,7 +57,7 @@
 	                color: palette.color(),
 	                stroke: 'rgba(0,0,0,0.15)',
 	                data: data2,
-	                name: <?php if ($graph_type == 'calculation' ) { echo '"'. get_currency_name(get_wocu_id()) .' / '. get_currency_name($currency_2_id) .'"'; } else { echo '"'. get_currency_name($currency_2_id) .'"'; } ?>
+	                name: <?php if ($graph_type == 'calculation' ) { echo '"'. get_currency_name(1) .' / '. get_currency_name($currency_2_id) .'"'; } else { echo '"'. get_currency_name($currency_2_id) .'"'; } ?>
 	        }
 	        ]
 	} );
