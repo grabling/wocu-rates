@@ -44,12 +44,6 @@
                 </div>
                 <div class="span2">
                     <label>
-                        <h6>Test Date</h6>
-                    </label>
-                    <input type="text" class="span8" value="<?php mysql_fetch_row($start_date_min;>
-                </div>
-                <div class="span2">
-                    <label>
                         <h6>Start Date</h6>
                     </label>
                     <input type="text" class="span8" value="<?php if (isset($start_date)) { echo $start_date; } else { echo '2000-01-01'; } ?>" id="startdate" name="startdate">
