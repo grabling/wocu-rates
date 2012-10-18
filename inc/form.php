@@ -46,7 +46,7 @@
                     <label>
                         <h6>Start Date</h6>
                     </label>
-                    <input type="text" class="span8" value="<?php if (isset($start_date)) { echo $start_date; } else { echo get_min_date(); } ?>" id="startdate" name="startdate">
+                    <input type="text" class="span8" value="<?php if (isset($start_date)) { echo $start_date; } else { echo $start_date_min; } ?>" id="startdate" name="startdate">
                 </div>
                 <div class="span2">
                     <label>
