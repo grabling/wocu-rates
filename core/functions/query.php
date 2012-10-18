@@ -6,7 +6,7 @@ function get_all_currency_names() {
 }
 
 function get_min_date() {
-	return mysql_query("SELECT MIN(`date`) FROM `fxrates` WHERE `currency_id` = 1");
+	return mysql_result(mysql_query("SELECT MIN(`date`) FROM `fxrates` WHERE `currency_id` = 1"), 0, 'date');
 }
 
 function get_max_date() {
