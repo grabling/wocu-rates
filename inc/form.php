@@ -1,8 +1,8 @@
 <?php
     $currency_list_one = get_all_currency_names();
     $currency_list_two = get_all_currency_names();
-    $start_date_min = get_min_start_date();
-    $start_date_max = get_max_start_date();
+    $start_date_min = get_min_date();
+    $start_date_max = get_max_date();
 ?>
 <div class="well">
     <div class="row-fluid">
