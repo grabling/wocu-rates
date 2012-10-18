@@ -1,8 +1,7 @@
 <?php
     $currency_list_one = get_all_currency_names();
     $currency_list_two = get_all_currency_names();
-    $start_date_min = get_min_date();
-    $start_date_max = get_max_date();
+
 ?>
 <div class="well">
     <div class="row-fluid">
@@ -46,7 +45,7 @@
                     <label>
                         <h6>Start Date</h6>
                     </label>
-                    <input type="text" class="span8" value="<?php if (isset($start_date)) { echo $start_date; } else { echo $start_date_min; } ?>" id="startdate" name="startdate">
+                    <input type="text" class="span8" value="<?php if (isset($start_date)) { echo $start_date; } else { echo '2000-01-01' } ?>" id="startdate" name="startdate">
                 </div>
                 <div class="span2">
                     <label>
