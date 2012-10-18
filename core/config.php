@@ -4,8 +4,8 @@ if(!defined('INCLUDE_CHECK')) die('You are not allowed to execute this file dire
 
 /* Config */
 
-$site_name		= 'xWOCU';
-$company_name	= echo get_max_date();	
+$site_name		= 'WOCU';
+$company_name	= 'WOCU';	
 
 /* End config */
 
