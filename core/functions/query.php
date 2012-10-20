@@ -6,11 +6,11 @@ function get_all_currency_names() {
 }
 
 function get_min_date() {
-	return mysql_result(mysql_query("SELECT MIN(`date`) FROM `fxrates` WHERE `currency_id` = 1"), 0, 'date');
+	return mysql_result(mysql_query("SELECT MIN(`date`) as date FROM `fxrates` WHERE `currency_id` = 1"), 0, 'date');
 }
 
 function get_max_date() {
-	return mysql_result(mysql_query("SELECT MAX(`date`) FROM `fxrates` WHERE `currency_id` = 1"), 0, 'date');
+	return mysql_result(mysql_query("SELECT MAX(`date`) as date FROM `fxrates` WHERE `currency_id` = 1"), 0, 'date');
 }
 
 function get_wocu_id() {
