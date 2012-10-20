@@ -45,13 +45,13 @@
                     <label>
                         <h6>Start Date</h6>
                     </label>
-                    <input type="text" class="span8" value="<?php if (isset($start_date)) { echo $start_date; } else { echo '2000-01-01'; } ?>" id="startdate" name="startdate">
+                    <input type="text" class="span8" value="<?php if (isset($start_date)) { echo $start_date; } else { echo get_min_date(); } ?>" id="startdate" name="startdate">
                 </div>
                 <div class="span2">
                     <label>
                         <h6>End Date</h6>
                     </label>
-                    <input type="text" class="span8" value="<?php if (isset($end_date)) { echo $end_date; } else { echo '2012-09-30'; } ?>"  id="enddate" name="enddate">
+                    <input type="text" class="span8" value="<?php if (isset($end_date)) { echo $end_date; } else { echo get_max_date(); } ?>"  id="enddate" name="enddate">
                 </div>
                 <div class="span2">
                     <label>
