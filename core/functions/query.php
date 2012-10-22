@@ -80,9 +80,7 @@ function calculation($currency_id_1, $currency_id_2, $start_date, $end_date) {
 		$results[$i]['B'] = $results[$i]['A'] / $results[0]['A'];
 	}
 
-	for ($i=0; $i < $count; $i++) { 
-		$results[$i]['C'] = LN($results[$i]['B'] / $results[0]['B']);
-	}
+
 	return $results;
 }
 
@@ -95,7 +93,7 @@ function format_calc_data($data) {
 		$shortDate = $data[$i]['date'];
 		$timestamp = strtotime($shortDate);
 		
-		$value = $data[$i]['C'];
+		$value = $data[$i]['B'];
 
 		$results_array[$i]['x'] = $timestamp;
 		$results_array[$i]['y'] = $value;
