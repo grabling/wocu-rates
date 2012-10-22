@@ -77,7 +77,7 @@ function calculation($currency_id_1, $currency_id_2, $start_date, $end_date) {
 	}
 
 	for ($i=0; $i < $count; $i++) { 
-		$results[$i]['B'] = log($results[$i]['A'] / $results[$i-1]['A']);
+		$results[$i]['B'] = $results[$i]['A'] / $results[0]['A'];
 	}
 
 
