@@ -1,6 +1,6 @@
 <div class="well offset4">
 	<div class="row-fluid">
-	   <div class="span8">
+	   <div>
 		<h1>
 		   <?php if ($graph_type == 'calculation'){echo 'Historical Baseline Volatility';} else {echo 'Historical FX Rates';} ?>
 		</h1>
