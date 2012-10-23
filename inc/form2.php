@@ -7,22 +7,22 @@
 			   </h1>
 			</div>
 			<div class="span12">	
-			   <h2>
+			   <h1>
 				<div class="span6"> <?php echo get_currency_name($currency_1_id) .'/'. get_currency_name($currency_2_id); ?></div>
 				<div class="span6">55%</div>
-			   </h2>
-			</div>
-			<div class="span12">
-			   <h2>
-				<div class="span6"> <?php echo 'XCU/'. get_currency_name($currency_2_id); ?></div>
-				<div class="span6">8.85%</div>
-			   </h2>
+			   </h1>
 			</div>
 			<div class="span12">
 			   <h1>
+				<div class="span6"> <?php echo 'XCU/'. get_currency_name($currency_2_id); ?></div>
+				<div class="span6">8.85%</div>
+			   </h1>
+			</div>
+			<div class="span12">
+			   <h2>
 				<div class="span6">Reduction</div>
 				<div class="span6">50%</div>
-			   </h1>
+			   </h2>
 			</div>
 		</form>
 	</div>
