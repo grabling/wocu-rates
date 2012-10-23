@@ -6,6 +6,7 @@
 		</h1>
 		<div id="chart"></div>
 		<div id="legend"></div>
+	   </div>
 	</div>
 </div>
 
