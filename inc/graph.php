@@ -1,4 +1,4 @@
-<div class="well">
+<div class="well offset4">
 	<div class="row-fluid">
 		
 			<div id="chart"></div>
