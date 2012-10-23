@@ -34,14 +34,6 @@
 	?>
 	;
 
-	//add table below chart
-	<?php
-	    if ($graph_type == 'calculation' ) {
-		include 'inc/form2.php';
-	}
-	?>
-	;
-
 	//Setup graph options
 
 	var palette = new Rickshaw.Color.Palette();
