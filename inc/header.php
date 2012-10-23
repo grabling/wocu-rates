@@ -15,6 +15,7 @@
       padding-top: 60px;
       padding-bottom: 40px;
       background: white;
+      height: 100%;
     }
   </style>
   <link href="css/bootstrap-responsive.css" rel="stylesheet">
