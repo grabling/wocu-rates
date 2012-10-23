@@ -11,6 +11,7 @@ $graph_type     = $_REQUEST['type'];
 include 'inc/form.php';
 
 if (isset($_REQUEST['c1'])) {
+    include 'inc/form2.php';
     include 'inc/graph.php';
 }
 
