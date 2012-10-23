@@ -119,6 +119,9 @@
 
 	var hover = new Hover( { graph: graph } ); 
 
+<?php>
+   if ($graph_type == 'calculation' ) { include 'inc/form2.php'; }
+?>
 
 </script>
 
