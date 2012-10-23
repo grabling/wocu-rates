@@ -34,6 +34,14 @@
 	?>
 	;
 
+	//add table below chart
+	<?php
+	    if ($graph_type == 'calculation' ) {
+		include 'inc/form2.php';
+	}
+	?>
+	;
+
 	//Setup graph options
 
 	var palette = new Rickshaw.Color.Palette();
@@ -118,10 +126,6 @@
 	});
 
 	var hover = new Hover( { graph: graph } ); 
-
-<?php>
-   if ($graph_type == 'calculation' ) { include 'inc/form2.php'; }
-?>
 
 </script>
 
