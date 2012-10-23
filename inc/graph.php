@@ -1,9 +1,11 @@
 <div class="well offset4">
 	<div class="row-fluid">
-		
-			<div id="chart"></div>
-			<div id="legend"></div>
-		
+	   <div class="span8">
+		<h1>
+		   <?php if ($graph_type == 'calculation'){echo 'Historical Baseline Volatility'; else {echo 'Historical FX Rates';} ?>
+		</h1>
+		<div id="chart"></div>
+		<div id="legend"></div>
 	</div>
 </div>
 
