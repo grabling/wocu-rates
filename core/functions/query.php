@@ -105,10 +105,10 @@ function calculation_stddev($currency_id_1, $currency_id_2, $start_date, $end_da
 	}
 	
 	for ($i=0; $i < $count; $i++) { 
-		$results[$i]['B'] = LOG($results[$i]['A'] / $results[0][$i-1]);
+		$resultsB[$i]['B'] = LOG($results[$i]['A'] / $results[$i-1]['A']);
 	}
 	
-	$mean = array_sum($results) / sizeof($results);
+	$mean = array_sum($resultsB) / sizeof($resultsB);
 
     $devs = array();
     
