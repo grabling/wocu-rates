@@ -110,17 +110,17 @@ function calculation_stddev($currency_id_1, $currency_id_2, $start_date, $end_da
 	
 	$mean = array_sum($resultsB) / sizeof($resultsB);
 
-    $devs = array();
+    //$devs = array();
     
-    foreach($resultsB as $num) {
-        $devs[] = pow($num - $mean, 2);
-    }
+    //foreach($resultsB as $num) {
+    //    $devs[] = pow($num - $mean, 2);
+    //}
 
-    $stddev = sqrt(array_sum($devs) / sizeof($devs));
+    //$stddev = sqrt(array_sum($devs) / sizeof($devs));
 
-	$result = $stddev * SQRT(360);
+	//$result = $stddev * SQRT(360);
 	
-	return $result;
+	return $mean; //$result;
 }
 
 function format_calc_data($data) {
