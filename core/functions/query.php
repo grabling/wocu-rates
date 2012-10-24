@@ -63,27 +63,65 @@ function calculation($currency_id_1, $currency_id_2, $start_date, $end_date) {
 		$results[$i]['c1'] = $row['rate'];
 		$i++;
 	}
-
 	$i = 0;
 
 	while ($row = mysql_fetch_array($c2)) {
 		$results[$i]['c2'] = $row['rate'];
 		$i++;
 	}
-
-
 	for ($i=0; $i < $count; $i++) { 
 		$results[$i]['A'] = $results[$i]['c1'] / $results[$i]['c2'];
 	}
-
 	for ($i=0; $i < $count; $i++) { 
 		$results[$i]['B'] = $results[$i]['A'] / $results[0]['A'];
 	}
-
-
 	return $results;
 }
 
+function calculation_stddev($currency_id_1, $currency_id_2, $start_date, $end_date) {
+	
+	$c1 = get_timeline_data($currency_id_1, $start_date, $end_date);
+	$c2 = get_timeline_data($currency_id_2, $start_date, $end_date);
+
+	$count = mysql_num_rows($c1);
+
+	$i = 0;
+
+	while ($row = mysql_fetch_array($c1)) {
+		$results[$i]['date'] = $row['date'];
+		$results[$i]['c1'] = $row['rate'];
+		$i++;
+	}
+	
+	$i = 0;
+
+	while ($row = mysql_fetch_array($c2)) {
+		$results[$i]['c2'] = $row['rate'];
+		$i++;
+	}
+	
+	for ($i=0; $i < $count; $i++) { 
+		$results[$i]['A'] = $results[$i]['c1'] / $results[$i]['c2'];
+	}
+	
+	for ($i=0; $i < $count; $i++) { 
+		$results[$i]['B'] = LOG($results[$i]['A'] / $results[0][$i-1]);
+	}
+	
+	$mean = array_sum($results) / sizeof($results);
+
+    $devs = array();
+    
+    foreach($results as $num) {
+        $devs[] = pow($num - $mean, 2);
+    }
+
+    $stddev = sqrt(array_sum($devs) / sizeof($devs));
+
+	$result = $stddev * SQRT(360);
+	
+	return $result;
+}
 
 function format_calc_data($data) {
 	$count = count($data);
