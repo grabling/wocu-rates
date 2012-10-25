@@ -123,7 +123,7 @@ function calculation_stddev($currency_id_1, $currency_id_2, $start_date, $end_da
     }
 
     $result = sqrt(array_sum($devs) / sizeof($devs));
-    $result = round(($result * sqrt(360))*100);
+    $result = round((($result * sqrt(360))*100),2);
     return $result;
 
 }

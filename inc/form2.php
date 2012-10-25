@@ -16,7 +16,7 @@
 			</div>
 			<div class="span12">
 				<div class="span6">Reduction</div>
-				<div class="span6"><?php echo ($result1 - $result2) / $result1;?></div>
+				<div class="span6"><?php echo round(($result1 - $result2) / $result1),2) .'%' ;?></div>
 			</div>
 		</form>
 	</div>
