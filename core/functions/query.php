@@ -104,23 +104,28 @@ function calculation_stddev($currency_id_1, $currency_id_2, $start_date, $end_da
 		$results[$i]['A'] = $results[$i]['c1'] / $results[$i]['c2'];
 	}
 	
-	for ($i=0; $i < $count; $i++) { 
-		$resultsB[$i]['B'] = LOG($results[$i]['A'] / $results[$i-1]['A']);
-	}
-	
-	$mean = array_sum($resultsB) / sizeof($resultsB);
+    $results[0]['B'] = 0;
 
-    //$devs = array();
-    
-    //foreach($resultsB as $num) {
-    //    $devs[] = pow($num - $mean, 2);
-    //}
+    for ($i=1; $i < $count; $i++) {
+        $results[$i]['B'] = LOG($results[$i]['A'] / $results[$i-1]['A']);
+    }
 
-    //$stddev = sqrt(array_sum($devs) / sizeof($devs));
+    for ($i=0; $i < $count; $i++) {
+        $mean = $mean + $results[$i]['B'];
+    }
 
-	//$result = $stddev * SQRT(360);
-	
-	return $mean; //$result;
+    $mean = $mean / $count;
+
+    $devs = array();
+
+    for ($i=0; $i < $count; $i++) {
+        $devs[$i] = pow($results[$i]['B'] - $mean, 2);
+    }
+
+    $result = sqrt(array_sum($devs) / sizeof($devs));
+    $result = $result * sqrt(360);
+    return $result;
+
 }
 
 function format_calc_data($data) {
