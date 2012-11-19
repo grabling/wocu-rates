@@ -43,6 +43,8 @@
 
   <body>
 
+	<background-color="white">
+		
     <!--?php require 'nav.php'; ?-->
 
     <div class="container">
