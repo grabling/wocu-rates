@@ -14,6 +14,7 @@
     body {
       padding-top: 60px;
       padding-bottom: 40px;
+      body {background: white; }
     }
   </style>
   <link href="css/bootstrap-responsive.css" rel="stylesheet">
