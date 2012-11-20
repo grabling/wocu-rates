@@ -3,6 +3,11 @@
     $currency_list_two = get_all_currency_names();
 
 ?>
+  <style type="text/css">
+    body {
+      background: white;
+    }
+  </style>
 <div class="well">
     <div class="row-fluid">
         <form action="index.php" method="GET">
