@@ -1,4 +1,4 @@
-<div class="well offset9">
+<div class="well offset8">
 	<div class="row-fluid">
 		<form action="index.php" method="GET">
 			<div class="span12">
