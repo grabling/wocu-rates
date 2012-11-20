@@ -12,7 +12,7 @@
   <link href="css/style.css" rel="stylesheet">
   <style type="text/css">
     body {
-      padding-top: 60px;
+      padding-top: 10px;
       padding-bottom: 40px;
       body { background: black; }
       .container { background: white; }
