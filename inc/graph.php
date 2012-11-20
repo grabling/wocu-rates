@@ -1,4 +1,4 @@
-<div class="well offset4">
+<div class="well">
 	<div class="row-fluid">
 	   <div>
 		<h1>
