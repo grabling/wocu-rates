@@ -1,4 +1,4 @@
-<div class="well">
+<div class="well span3">
 	<div class="row-fluid">
 		<form action="index.php" method="GET">
 			<div class="span12">
