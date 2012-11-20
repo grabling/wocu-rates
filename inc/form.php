@@ -8,9 +8,7 @@
         <form action="index.php" method="GET">
             <div class="span12">
                 <div class="span2">
-                    <label>
-                        <h6>Currency 1</h6>
-                    </label>
+                    <label>Currency 1</label>
                     <select name="c1" id="c1" class="span8">
                         <?php
                         while($row = mysql_fetch_array($currency_list_one)){
