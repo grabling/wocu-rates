@@ -23,9 +23,7 @@
                     </select>
                 </div>
                 <div class="span2">
-                    <label>
-                        <h6>Currency 2</h6>
-                    </label>
+                    <label>Currency 2</label>
                     <select name="c2" id="c2" class="span8">
                         <?php
                         while($row = mysql_fetch_array($currency_list_two)){
@@ -40,21 +38,15 @@
                     </select>
                 </div>
                 <div class="span2">
-                    <label>
-                        <h6>Start Date</h6>
-                    </label>
+                    <label>Start Date</label>
                     <input type="text" class="span8" value="<?php if (isset($start_date)) { echo $start_date; } else { echo get_min_date(); } ?>" id="startdate" name="startdate">
                 </div>
                 <div class="span2">
-                    <label>
-                        <h6>End Date</h6>
-                    </label>
+                    <label>End Date</label>
                     <input type="text" class="span8" value="<?php if (isset($end_date)) { echo $end_date; } else { echo get_max_date(); } ?>"  id="enddate" name="enddate">
                 </div>
                 <div class="span2">
-                    <label>
-                        <h6>Type</h6>
-                    </label>
+                    <label>Type</label>
                     <select name="type" id="type" class="span8">
                         <option value="fxrates" <?php if ($graph_type == 'fxrates') { echo 'selected="selected"'; } ?>>FX Rates</option>
                         <option value="calculation" <?php if ($graph_type == 'calculation') { echo 'selected="selected"'; } ?>>Calculation</option>
