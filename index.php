@@ -12,6 +12,7 @@ include 'inc/form.php';
 
 if (isset($_REQUEST['c1'])) {
     include 'inc/graph.php';
+	include 'inc/form2.php';
 }
 
 include 'inc/footer.php'; 
