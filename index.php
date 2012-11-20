@@ -9,10 +9,10 @@ $end_date     = $_REQUEST['enddate'];
 $graph_type     = $_REQUEST['type'];
  
 include 'inc/form.php';
+include 'inc/form2.php';
 
 if (isset($_REQUEST['c1'])) {
     include 'inc/graph.php';
-	include 'inc/form2.php';
 }
 
 include 'inc/footer.php'; 
