@@ -141,7 +141,7 @@ textarea {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
-  background-color: #FFF;
+  background-color: transparent;
   border: 0;
 }
 
@@ -161,7 +161,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color: #FFF;
+  background-color: transparent;
 }
 
 a {
