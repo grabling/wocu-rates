@@ -13,9 +13,8 @@
   <style type="text/css">
     body {
       padding-top: 10px;
-      padding-bottom: 40px;
-      body { background: black; }
-      .container { background: white; }
+      padding-bottom: 10px;
+      background: #ddd;
     }
   </style>
   <link href="css/bootstrap-responsive.css" rel="stylesheet">
