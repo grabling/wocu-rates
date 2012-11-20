@@ -53,9 +53,7 @@
                     </select>
                 </div>
                 <div class="span2">
-                    <label>
-                        <h6>View data</h6>
-                    </label>
+                    <label>View Results</label>
                     <button type="submit" class="btn">Submit</button>
                 </div>
             </div>
