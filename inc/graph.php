@@ -1,4 +1,4 @@
-<div class="well">
+<div class="well span8">
 	<div class="row-fluid">
 	   <div>
 		<h1>
