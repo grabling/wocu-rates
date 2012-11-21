@@ -60,6 +60,10 @@
         </form>
     </div>
 	<div class="row-fluid">
+			<div class="span12">
+			</div>
+    </div>
+	<div class="row-fluid">
 		<form action="index.php" method="GET">
 			<div class="span12">
 				<div class="span12">
