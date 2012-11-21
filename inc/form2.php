@@ -6,11 +6,11 @@
 					<?php echo 'Volatility since '.$start_date.': '; ?>
 					<?php echo get_currency_name($currency_1_id) .'/'. get_currency_name($currency_2_id);?>
 					<?php $result1 = calculation_stddev($currency_1_id, $currency_2_id, $start_date, $end_date); ?>
-					<?php echo ' = '. $result1 .'%' ; ?>
+					<?php echo ' = '. $result1 .'%,' ; ?>
 					<?php echo ' XCU/'. get_currency_name($currency_2_id); ?>
 					<?php $result2 = calculation_stddev(get_wocu_id(), $currency_2_id, $start_date, $end_date); ?>
-					<?php echo ' = '. $result2 .'%' ; ?>
-					<?php echo ' Reduction = '; ?>
+					<?php echo ' = '. $result2 .'%,' ; ?>
+					<?php echo ' WOCU Reduction Factor = '; ?>
 					<?php echo round(((($result1 - $result2) / $result1)*100),2) .'%' ;?>
 				</div>
 			</div>
