@@ -6,7 +6,7 @@ $currency_1_id  = $_REQUEST['c1'];
 $currency_2_id  = $_REQUEST['c2'];
 $start_date     = $_REQUEST['startdate'];
 $end_date     = $_REQUEST['enddate'];
-$graph_type     = $_REQUEST['type'];
+$graph_type     = 'calculation';
  
 include 'inc/form.php';
 

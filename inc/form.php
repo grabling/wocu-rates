@@ -1,8 +1,6 @@
 <?php
     $currency_list_one = get_all_currency_names();
     $currency_list_two = get_all_currency_names();
-    $graph_type == 'calculation';
-
 ?>
 <div class="well">
     <div class="row-fluid">
@@ -48,7 +46,6 @@
                 </div>
                 <div class="span2">
                     <label>View Results</label>
-                    <?php $graph_type == 'calculation'; ?>
                     <button type="submit" class="btn">Submit</button>
                 </div>
             </div>
