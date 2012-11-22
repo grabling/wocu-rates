@@ -1,6 +1,7 @@
 <?php
     $currency_list_one = get_all_currency_names();
     $currency_list_two = get_all_currency_names();
+    $graph_type == 'calculation';
 
 ?>
 <div class="well">
@@ -37,20 +38,13 @@
                         ?>
                     </select>
                 </div>
-                <div class="span2">
+                <div class="span3">
                     <label>Start Date</label>
                     <input type="text" class="span8" value="<?php if (isset($start_date)) { echo $start_date; } else { echo get_min_date(); } ?>" id="startdate" name="startdate">
                 </div>
-                <div class="span2">
+                <div class="span3">
                     <label>End Date</label>
                     <input type="text" class="span8" value="<?php if (isset($end_date)) { echo $end_date; } else { echo get_max_date(); } ?>"  id="enddate" name="enddate">
-                </div>
-                <div class="span2">
-                    <label>Type</label>
-                    <select name="type" id="type" class="span8">
-                        <option value="fxrates" <?php if ($graph_type == 'fxrates') { echo 'selected="selected"'; } ?>>FX Rates</option>
-                        <option value="calculation" <?php if ($graph_type == 'calculation') { echo 'selected="selected"'; } ?>>Calculation</option>
-                    </select>
                 </div>
                 <div class="span2">
                     <label>View Results</label>
@@ -58,10 +52,6 @@
                 </div>
             </div>
         </form>
-    </div>
-	<div class="row-fluid">
-			<div class="span12">
-			</div>
     </div>
 	<div class="row-fluid">
 		<form action="index.php" method="GET">
