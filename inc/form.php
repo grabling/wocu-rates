@@ -48,6 +48,7 @@
                 </div>
                 <div class="span2">
                     <label>View Results</label>
+                    <?php $graph_type == 'calculation'; ?>
                     <button type="submit" class="btn">Submit</button>
                 </div>
             </div>
