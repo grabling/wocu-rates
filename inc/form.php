@@ -55,7 +55,7 @@
 		<form action="index.php" method="GET">
 			<div class="span12">
 				<div class="span12">
-					<h3>
+					<h6 small>
 					<?php echo 'Volatility since '.$start_date.': '; ?>
 					<?php echo get_currency_name($currency_1_id) .'/'. get_currency_name($currency_2_id);?>
 					<?php $result1 = calculation_stddev($currency_1_id, $currency_2_id, $start_date, $end_date); ?>
@@ -65,7 +65,7 @@
 					<?php echo ' = '. $result2 .'%,' ; ?>
 					<?php echo ' WOCU Reduction Factor = '; ?>
 					<?php echo round(((($result1 - $result2) / $result1)*100),2) .'%' ;?>
-					</h3>
+					</h6 small>
 				</div>
 			</div>
 		</form>
