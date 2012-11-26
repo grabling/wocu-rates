@@ -85,7 +85,7 @@
 
 		render: function(args) {
 
-			// legend.innerHTML = args.formattedXValue;
+			legend.innerHTML = 'Values: '; //args.formattedXValue;
 
 			args.detail.sort(function(a, b) { return a.order - b.order }).forEach( function(d) {
 
