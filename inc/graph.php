@@ -85,7 +85,7 @@
 
 		render: function(args) {
 
-			legend.innerHTML = args.formattedXValue;
+			// legend.innerHTML = args.formattedXValue;
 
 			args.detail.sort(function(a, b) { return a.order - b.order }).forEach( function(d) {
 
@@ -98,7 +98,7 @@
 
 				var label = document.createElement('div');
 				label.className = 'label';
-				label.innerHTML = d.name + ": " + d.formattedYValue;
+				label.innerHTML = d.name + " : " + d.formattedYValue;
 
 				line.appendChild(swatch);
 				line.appendChild(label);
