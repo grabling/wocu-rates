@@ -2,7 +2,7 @@
 	<div class="row-fluid">
 	   <div>
 		<h1>
-		   <?php if ($graph_type == 'calculation'){echo 'Historical Baseline Volatility';} else {echo 'Historical FX Rates';} ?>
+		   <?php if ($graph_type == 'calculation'){echo 'Historical FX Rates (rebased to 1.0 from Start Date)';} else {echo 'Historical FX Rates';} ?>
 		</h1>
 		<div id="chart"></div>
 		<div id="legend"></div>
