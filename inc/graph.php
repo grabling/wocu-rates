@@ -1,9 +1,9 @@
 <div class="well">
 	<div class="row-fluid">
 	   <div>
-		<h1>
-		   <?php if ($graph_type == 'calculation'){echo 'Historical FX Rates (rebased to 1.0 from Start Date)';} else {echo 'Historical FX Rates';} ?>
-		</h1>
+		<div class="span12">
+		<h1><?php echo 'Historical FX Rates - base lined to a starting value of 1'; ?></h1>
+		</div>
 		<div id="chart"></div>
 		<div id="legend"></div>
 	   </div>
@@ -44,7 +44,7 @@
 	var graph = new Rickshaw.Graph( {
 	    element: document.getElementById("chart"),
 	    //width: 1130,
-	    height: 300,
+	    height: 332,
 	    min: 'auto',
 	    padding: { top: 0.2, bottom: 0.2 },
 	    renderer: 'line',
